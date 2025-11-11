@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 Niche | Pure Vision</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+      font-family: "Playfair Display", serif;
+      background-color: #000;
+      color: white;
+    }
+
+    section {
+      height: 100vh;
+      scroll-snap-align: start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 0 40px;
+      transition: all 0.8s ease;
+      position: relative;
+    }
+
+    /* Hero Bölümü */
+    .hero {
+      background: radial-gradient(circle at center, #111 0%, #000 100%);
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      letter-spacing: 6px;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #d4af37, #fff, #d4af37);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 4s infinite linear;
+    }
+
+    @keyframes shine {
+      0% { background-position: 0%; }
+      100% { background-position: 200%; }
+    }
+
+    .hero p {
+      max-width: 800px;
+      font-family: "Roboto", sans-serif;
+      color: #ccc;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .back-btn {
+      margin-top: 30px;
+      padding: 12px 35px;
+      border: 2px solid #fff;
+      color: white;
+      background: transparent;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: all 0.4s ease;
+    }
+
+    .back-btn:hover {
+      background-color: white;
+      color: black;
+    }
+
+    /* Koleksiyon Bölümü */
+    .collection {
+      background-color: #0d0d0d;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .collection h2 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      color: #d4af37;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    .collection p {
+      max-width: 700px;
+      color: #bbb;
+      line-height: 1.7;
+      font-family: "Roboto", sans-serif;
+    }
+
+    /* Galeri Bölümü */
+    .gallery {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 60px 20px;
+    }
+
+    .gallery img {
+      width: 280px;
+      border-radius: 10px;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+    }
+
+    /* Quote Bölümü */
+    .quote {
+      background: linear-gradient(180deg, #000, #1a1a1a);
+      font-style: italic;
+      font-size: 1.8rem;
+      color: #eee;
+      padding: 0 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .quote span {
+      color: #d4af37;
+      font-weight: bold;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. Bölüm -->
+  <section class="hero">
+    <h1>Pure Vision</h1>
+    <p>
+      7 Niche’in “Pure Vision” koleksiyonu, zarafetin sadelikle buluştuğu yerdir.  
+      Her detay, tasarımın özünü; her çizgi, mükemmelliğin izini taşır.
+    </p>
+    <button class="back-btn" onclick="window.location.href='index.html'">← Geri Dön</button>
+    <footer>© 2025 7 Niche | All Rights Reserved</footer>
+  </section>
+
+  <!-- 2. Bölüm -->
+  <section class="collection">
+    <h2>Koleksiyonun Ruhu</h2>
+    <p>
+      Pure Vision, sadece bir koleksiyon değil, bir yaşam felsefesidir.  
+      Zamanın ötesinde bir sadelik, doğanın huzuruyla birleşir.  
+      Her parça, sessiz bir lüksün ifadesidir.
+    </p>
+  </section>
+
+  <!-- 3. Bölüm -->
+  <section class="gallery">
+    <img src="./assets/images/Panda.png" alt="Panda">
+    <img src="./assets/images/Paytak.png" alt="Paytak">
+    <img src="./assets/images/uzananpanda.png" alt="Uzanan Panda">
+  </section>
+
+  <!-- 4. Bölüm -->
+  <section class="quote">
+    <p>
+      “Gerçek zarafet, <span>gösterişte</span> değil,  
+      <span>sadelikte</span> gizlidir.”  
+      <br>— The 7 Niche
+    </p>
+  </section>
+
+</body>
+</html>
+
